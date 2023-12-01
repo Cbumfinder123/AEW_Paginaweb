@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovaciones</title>
+  <link rel="stylesheet" href="../CSS/InnovacionesA.css">
+  <link rel="icon" href="../imagen/Logos/logo.png" >
+</head>
+<body>
+  <div  onclick="PlayAudio()" class="cabeza">
+    <img src="../imagen/Logos/logo.png" alt="">
+    <ul>
+      <li><a href="../paginas/Inicio.html">Inicio</a></li>
+    <li><a href="../paginas/Autos.html">Autos</a>
+    </li>
+    <li><a href="../paginas/Racing.html">Racing</a></li>
+    <li><a href="#Classics">Classics</a>
+      <ul class="submenu">
+        <a href="../paginas/ClassicsAutos.html">Autos</a>
+        <a href="../paginas/ClassicsRacing.html">Racing</a>
+      </ul>
+    </li>
+    <li><a href="../paginas/InnovacionesA.html">Innovaciones</a></li>
+  </div>
+  <header>
+    <div class="slider">
+      <div class="lista">
+        <div class="item active">
+          <video id="ferrari-video" loop muted autoplay>
+            <source src="../videos/Iferrari.mp4" type="video/mp4">
+        </video>
+          <img src="../imagen/Autos/Innovaciones/ferrari.jpg" alt="">        
+          <div class="content">
+            <p><a href="#" onclick="toggleVideo('ferrari-video')">Ferrari</a></p>
+            <h2>Ferrari Vision Gran Turismo</h2>
+            <p class="p1">Se inspira en los prototipos deportivos legendarios como el 330 P3 y el 512 S, que disfrutaron de un gran éxito en carreras de resistencia como las 24 Horas de Le Mans y las 24 Horas de Daytona.</p>   
+            </div>
+        </div>
+        <div class="item">
+          <video id="lamborghini-video" loop muted autoplay>
+            <source src="../videos/Ilamborghini.mp4" type="video/mp4">
+        </video>
+          <img src="../imagen/Autos/Innovaciones/Lamborghini.jpg" alt="">
+          <div class="content">
+            <p><a href="#" onclick="toggleVideo('lamborghini-video')">Lamborghini</a></p>
+            <h2>Lamborghini Terzo Millennio</h2>
+            <p class="p1">El Lamborghini Terzo Millennio es un superdeportivo concepto eléctrico que representa la visión futurista de Lamborghini,
+               con un diseño aerodinámico y tecnologías innovadoras para alcanzar un rendimiento excepcional.</p>
+          </div>
+        </div>
+        <div class="item">
+          <video id="mercedes-video" loop muted autoplay>
+            <source src="../videos/iMercedes.mp4" type="video/mp4">
+        </video>
+          <img src="../imagen/Autos/Innovaciones/Mercedes.jpg" alt="">
+          <div class="content">
+            <p><a href="#" onclick="toggleVideo('mercedes-video')">Mercedes-Benz</a></p>
+            <h2>Mercedes-Benz Vision AVTR</h2>
+            <p class="p1">El Mercedes-Benz Vision AVTR es un vehículo conceptual que fusiona la movilidad sostenible con la innovación tecnológica. 
+              Inspirado en la película "Avatar", destaca por su diseño futurista.</p>
+          </div>
+        </div>
+        <div class="item">
+          <video id="jaguar-video" loop muted autoplay>
+            <source src="../videos/ijaguar.mp4" type="video/mp4">
+        </video>
+          <img src="../imagen/Autos/Innovaciones/Jaguar.jpg" alt="">
+          <div class="content">
+            <p><a href="#" onclick="toggleVideo('jaguar-video')">Jaguar</a></p>
+            <h2>Jaguar VisionㅤGT SV</h2>
+            <p class="p1">El Jaguar Vision GT SV es un automóvil deportivo de alto rendimiento diseñado por GT. 
+              Con un diseño aerodinámico agresivo y tecnología avanzada, este concepto virtual encarna la esencia deportiva y futurista de la marca Jaguar.</p>
+          </div>
+        </div>
+        <div class="item">
+          <video id="alpine-video" loop muted autoplay>
+            <source src="../videos/iAlpine.mp4" type="video/mp4">
+        </video>
+          <img src="../imagen/Autos/Innovaciones/Alpine.jpg" alt="">
+          <div class="content">
+            <p><a href="#" onclick="toggleVideo('alpine-video')">Alpine</a></p>
+            <h2>Alpine A4810</h2>
+            <p class="p1"> Este es un hypercar que será impulsado por un motor alimentado por hidrógeno1. Este concepto representa una visión del futuro en la que los vehículos deportivos
+              pueden ser respetuosos con el medio ambiente </p>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <div class="galeria">
+        <div class="item active">
+          <img src="../imagen/Autos/Innovaciones/ferrari.jpg" alt="">
+          <div class="content">
+            Ferrari
+          </div>
+        </div>
+        <div class="item">
+          <img src="../imagen/Autos/Innovaciones/Lamborghini.jpg" alt="">
+          <div class="content">
+            Lamborghini
+          </div>
+        </div>
+        <div class="item">
+          <img src="../imagen/Autos/Innovaciones/Mercedes.jpg" alt="">
+          <div class="content">
+            Mercedes-Benz
+          </div>
+        </div>
+        <div class="item">
+          <img src="../imagen/Autos/Innovaciones/Jaguar.jpg" alt="">
+          <div class="content">
+            Jaguar
+          </div>
+        </div>
+        <div class="item">
+          <img src="../imagen/Autos/Innovaciones/Alpine.jpg" alt="">
+          <div class="content">
+            Alpine
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <audio id="musica3">
+    <source src="../sonido/fondo3.mp3" type="audio/mpeg">
+  </audio>   
+  <script src="../js/Innovaciones.js"></script>
+</body>
+</html>

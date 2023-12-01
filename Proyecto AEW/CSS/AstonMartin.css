@@ -1,0 +1,285 @@
+@font-face {
+  font-family: 'jiji';
+  src: url(../Fuentes/Capture\ it.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'jeje';
+  src: url(../Fuentes/Caxo.otf);
+  font-weight: bold;
+  font-style: bold;
+}
+body{
+  background-image: url(../imagen/fondo/ferrari.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  width: 100%;
+
+}
+.cabeza{
+  display: flex;
+  align-items: center;
+  background-color: rgb(1, 1, 1, 0.7);  
+  z-index: 2;
+}
+
+#wsp {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: auto; 
+}
+
+#numero{
+  width: 40px;
+  margin-left: 950px;
+}
+.cabeza img{
+margin-left: 20px;
+  width: 40px;
+  height: 45px;
+  float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  li {
+    font-family: sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    font-size: 20px;
+  }
+  
+  li a:hover {
+    background-color: crimson;
+    display: block;
+    border-radius: 10px;
+  }
+
+
+  ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(1, 1, 1, 0.7); 
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  li:hover .submenu {
+    display: block;
+    opacity: 1; 
+    z-index: 3;
+  }
+  
+  li.submenu-item {
+    display: block;
+  }
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background-color: black;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+  }
+footer{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+
+header{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; 
+  align-items: center;
+  font-family: "Raleway",Arial sans-serif;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .icon{
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.wrapper .icon a{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  display: block;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+.wrapper .icon img{
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+.wrapper .icon .tool{
+  font-family: 'jeje';
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  background-color:  rgb(1, 1, 1, 0.7); 
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .icon:hover .tool{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .icon .tool::before{
+  color: #fff;
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background:  rgb(1, 1, 1, 0.7); 
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+nav{
+  margin-top: 800px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  font-family: "Raleway",Arial sans-serif;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway",Arial sans-serif;
+}
+.container{
+  position: relative;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.card{
+  position: relative;
+  width: 500px; 
+  color: #fff;
+  height: 300px;
+  background-color: #222;
+  margin: 45px; 
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.card .imgbox{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+  transition: 0.5s ease-in-out;
+  backdrop-filter: blur(20px);
+}
+.card .imgbox img{
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+.card:hover .imgbox{
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  top:calc(50% - 75px)
+}
+.card .contenido{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px - 40px*2);
+  height: 100%;
+  padding: 28px;
+  overflow: auto;
+}
+.card .contenido h3{
+  font-family: 'jiji';
+  color: crimson;
+  font-size: 35px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.card .contenido p{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:  19px;
+  margin-top: 0;
+}
+
+
+
+

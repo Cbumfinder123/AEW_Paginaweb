@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'jeje';
+  src: url(../Fuentes/Revamped.otf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+body{
+  background-image: url(../imagen/fondo/fondo1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+.cabeza{
+  display: flex;
+  align-items: center;
+  background-color: rgb(1, 1, 1, 0.7);  
+  z-index: 2;
+  width: 100%;
+}
+
+#wsp {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto; 
+}
+#numero{
+  width: 40px;
+  margin-left: 950px;
+}
+.cabeza img{
+margin-left: 20px;
+  width: 40px;
+  height: 45px;
+  float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  li {
+    font-family: 'Nombre de la Fuente', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    font-size: 20px;
+  }
+  
+  li a:hover {
+    background-color: crimson;
+    display: block;
+    border-radius: 10px;
+  }
+
+
+  ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(1, 1, 1, 0.7); 
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  li:hover .submenu {
+    display: block;
+    opacity: 1; 
+    z-index: 2;
+  }
+  
+  li.submenu-item {
+    display: block;
+  }
+  .wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor{
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .card{
+    width: 120px; 
+    border-radius: .75rem;
+    background-size: cover;
+    background-position: center; 
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 12px; 
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  }
+  
+  .card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .card > .row > .icono {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 18px 18px 18px;
+  }
+  .card > .row > .descripcion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 120px; 
+    width: 720px; 
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+  }
+  
+  .descripcion p {
+    color: white;
+    padding-top: 0;
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .descripcion h4 {
+    color: crimson;
+    text-shadow: 2px 2px 4px #000000;
+    text-transform: uppercase;
+    font-family: 'jeje';
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  input{
+    display: none;
+  }
+  input:checked + label {
+    width: 800px;
+  } 
+  input:checked + label .descripcion{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }  
+.card[for="c1"]{
+  background-image: url(../imagen/Autos/Clasicos/ferrari.jfif);
+}
+.card[for="c2"]{
+  background-image: url(../imagen/Autos/Clasicos/Mercedes-Benz\ W196\ R\ Streamliner.jpg);
+}
+.card[for="c3"]{
+  background-image: url(../imagen/Autos/Clasicos/Aston.jpg);
+}
+.card[for="c4"]{
+  background-image: url(../imagen/Autos/Clasicos/Jaguar\ D\ type.jpg);
+}
+
+
